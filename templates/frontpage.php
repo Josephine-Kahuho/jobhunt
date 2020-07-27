@@ -51,8 +51,8 @@
                         <center><i class="fa fa-area-chart" style="color:#BB7824"></i></center>
                     </div>
                     <div class="wrimagecard-topimage_title">
-                        <h4><?php echo $job->job_title ?>
-                        <div class="pull-right badge">18</div></h4>
+                        <h6><?php echo $job->job_title ?>
+                        <div class="pull-right badge">Ksh. <?php echo $job->salary?></div></h6>
                     </div>
                     </a>
                 </div>
