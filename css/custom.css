@@ -1,39 +1,47 @@
-body{
-    background: blue ;
+/* remove rounding from cards, buttons and inputs */
+.btn, form-inline {
+    padding: 0px 20px 0px 20px !important;
+    border-radius: 2px !important;
+    margin: 5px 5px 5px 5px !important;
 }
-
-.full-width-div {
-    position: absolute;
+.wrimagecard{	
+	margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    /* box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15); */
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.wrimagecard .fa{
+	position: relative;
+    font-size: 70px;
+}
+.wrimagecard-topimage_header{
+padding: 20px;
+}
+a.wrimagecard:hover, .wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.wrimagecard-topimage a {
     width: 100%;
-    left: 0;
-    height: 20%;
-    background-image: url(‘path/image.jpg’);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    display: block;
 }
-.carousel-item{min-height:300px; background:#ccc; }
-.divider {border: 1px solid #ccc;}
-img {width:100%;}
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    height: 80px;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
 
-     .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+
+
